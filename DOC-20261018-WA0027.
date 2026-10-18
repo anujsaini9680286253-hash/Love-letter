@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#eee7ff" />
+<meta name="description" content="A little lavender love letter from Anu to Momma." />
+<title>For Momma ♡ — from Anu</title>
+<style>
+:root{--bg:#f7f2ff;--lav:#d9c8ff;--deep:#6f4ca5;--ink:#392c50;--muted:#88799d;--rose:#f5c9e2;--white:rgba(255,255,255,.78)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,sans-serif;background:radial-gradient(ellipse at 12% 8%,#fff 0,transparent 32%),radial-gradient(ellipse at 90% 20%,#e5d6ff 0,transparent 34%),linear-gradient(145deg,#faf7ff,#f1e9ff 48%,#fff2f8);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.22;background-image:radial-gradient(#aa8fd5 .7px,transparent .7px);background-size:19px 19px;z-index:-1}
+.wrap{width:min(100% - 30px,720px);margin:auto;padding:28px 0 46px}.topline{text-align:center;color:var(--deep);font-size:.75rem;letter-spacing:.19em;text-transform:uppercase;font-weight:800}.hero{text-align:center;padding:22px 0 16px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #e4d7fa;background:#ffffff9c;padding:8px 13px;border-radius:99px;color:#8166a8;font-size:.8rem;box-shadow:0 5px 20px #8f6dc40d}.hero h1{font-family:Georgia,serif;font-weight:500;letter-spacing:-.045em;font-size:clamp(2.6rem,10vw,5rem);line-height:1.02;margin:19px 0 12px}.hero h1 span{color:#8a68bd;font-style:italic}.subtitle{max-width:420px;margin:0 auto;color:var(--muted);line-height:1.7;font-size:1rem}
+.panel{background:var(--white);border:1px solid #fff;border-radius:28px;box-shadow:0 18px 60px #7457a31a,inset 0 1px 0 #fff;backdrop-filter:blur(12px)}.envelope-panel{padding:25px 18px 22px;text-align:center;margin:16px auto 22px;max-width:510px}.mini-label{font-size:.72rem;letter-spacing:.17em;text-transform:uppercase;color:#987fba;font-weight:800}.envelope-stage{height:210px;display:grid;place-items:center;position:relative;perspective:900px}.glow{position:absolute;width:175px;height:140px;background:#d8c5ff88;filter:blur(28px);border-radius:50%}.envelope{position:relative;width:218px;height:137px;cursor:pointer;border:0;background:transparent;filter:drop-shadow(0 14px 12px #70569b25);transition:transform .3s;outline-offset:8px;touch-action:manipulation}.envelope:hover{transform:translateY(-4px) rotate(-1deg)}.env-back{position:absolute;inset:0;background:#c8b2f1;border-radius:8px 8px 12px 12px}.env-front{position:absolute;inset:0;background:linear-gradient(145deg,#eadfff,#cbb7f2);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);border-radius:8px 8px 12px 12px}.env-flap{position:absolute;inset:0;background:linear-gradient(150deg,#bba0e9,#d6c4f6);clip-path:polygon(0 0,100% 0,50% 58%);transform-origin:top;transition:transform .75s cubic-bezier(.2,.8,.2,1);z-index:4;border-radius:8px 8px 0 0}.letter-peek{position:absolute;width:174px;height:112px;left:22px;top:5px;border-radius:6px;background:#fffafd;transition:transform .7s .1s;z-index:2;display:grid;place-items:center;color:#8c6eb4;font-size:1.7rem}.seal{position:absolute;z-index:5;left:calc(50% - 18px);top:48px;width:36px;height:36px;border-radius:50%;background:linear-gradient(145deg,#f7d7ee,#d9b7ed);display:grid;place-items:center;color:#8e5f9e;font-size:18px;box-shadow:0 3px 9px #74519b30;transition:opacity .25s,transform .25s}.envelope.open .env-flap{transform:rotateX(180deg);z-index:1}.envelope.open .letter-peek{transform:translateY(-67px);z-index:6}.envelope.open .seal{opacity:0;transform:scale(.6)}.tap-hint{color:#8d7aa5;font-size:.88rem;margin:0}.letter{display:none;text-align:left;padding:26px 23px;margin:18px auto 0;max-width:510px;background:#fffdfd;border:1px solid #fff;border-radius:22px;box-shadow:0 14px 35px #7457a318;animation:rise .7s both}.letter.show{display:block}.letter .to{color:#9a78c0;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.letter h2{font-family:Georgia,serif;font-weight:500;font-size:1.9rem;margin:10px 0 16px}.letter p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.9;color:#554765;white-space:pre-line}.sign{font-family:Georgia,serif;font-style:italic;color:#8d69b8;font-size:1.35rem;text-align:right;margin-top:20px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin:22px 0}.card{padding:17px 12px;text-align:center;min-height:135px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px}.card .emoji{font-size:1.7rem}.card strong{font-family:Georgia,serif;font-size:1.02rem;font-weight:500}.card span:last-child{font-size:.78rem;line-height:1.45;color:var(--muted)}.date-panel{text-align:center;padding:23px 18px;margin-top:18px}.date-panel .big-heart{font-size:1.8rem}.date-panel h2{font-family:Georgia,serif;font-weight:500;margin:9px 0;font-size:1.6rem}.date-panel p{color:var(--muted);margin:0;font-size:.9rem;line-height:1.7}.date{display:inline-block;margin-top:14px;background:#f0e7ff;color:#7956a7;padding:9px 15px;border-radius:99px;font-weight:800;letter-spacing:.06em;font-size:.85rem}.footer{text-align:center;padding:26px 10px 0;color:#9b8bad;font-size:.8rem}.footer b{color:#8c68b5}.heart{position:fixed;bottom:-35px;pointer-events:none;z-index:10;animation:floatUp linear forwards;opacity:.8;filter:drop-shadow(0 3px 5px #b59ad655)}.button{border:0;border-radius:99px;background:linear-gradient(135deg,#a88bd9,#8d6bbf);color:white;font-weight:800;padding:13px 19px;box-shadow:0 8px 20px #8d6bbf38;cursor:pointer;font-size:.9rem;touch-action:manipulation}.button:active{transform:scale(.98)}.actions{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin-top:15px}.soft-button{background:#fff9;border:1px solid #e7dafa;color:#7f60a8;box-shadow:none}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(30deg);opacity:0}}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@media(max-width:480px){.wrap{width:min(100% - 22px,720px);padding-top:20px}.envelope-panel{padding:22px 12px}.cards{gap:7px}.card{padding:14px 7px;min-height:142px}.card strong{font-size:.93rem}.card span:last-child{font-size:.73rem}.letter{padding:22px 18px}.letter p{font-size:1.02rem}.envelope-stage{height:194px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="topline">a little piece of my heart ♡</div>
+  <header class="hero">
+    <div class="eyebrow">✧ made with all my love ✧</div>
+    <h1>For my <span>Momma</span> ♡</h1>
+    <p class="subtitle">A tiny lavender universe, made just for you. Because if I could give you one thing, it would be a chance to see yourself through my eyes. 💜</p>
+  </header>
+  <section class="panel envelope-panel" aria-label="Love letter envelope">
+    <div class="mini-label">you have a little letter</div>
+    <div class="envelope-stage">
+      <div class="glow"></div>
+      <button class="envelope" id="envelope" aria-label="Open your love letter" aria-expanded="false">
+        <div class="env-back"></div><div class="letter-peek">♡</div><div class="env-flap"></div><div class="env-front"></div><div class="seal">♥</div>
+      </button>
+    </div>
+    <p class="tap-hint" id="hint">Tap the envelope to open your surprise, Momma ✨</p>
+    <div class="actions"><button class="button" id="openBtn">Open my letter 💌</button><button class="button soft-button" id="sprinkleBtn">More hearts ✨</button></div>
+  </section>
+  <article class="letter" id="letter" aria-live="polite">
+    <div class="to">to my favourite person</div>
+    <h2>My sweetest Momma,</h2>
+    <p>Hey, my Momma. 💜
+
+I don't think you realise how special you are to me. You make ordinary moments feel magical, and even a small conversation with you can turn my whole day around.
+
+If I could, I'd collect every little thing that makes you smile and keep them safe in a jar, just so I could give them back to you on your hard days. You deserve softness, peace, warm hugs, and a love that never makes you question your worth.
+
+I'm not promising to be perfect, but I want to keep choosing you, listening to you, learning you, and finding new ways to make you feel loved. In a world full of noise, you are one of my favourite places to feel at home.
+
+So here's your reminder, for today and all the days after: you are loved more than this tiny page could ever explain. If this little website could hug you, it would never let go. 🫂💗</p>
+    <div class="sign">Always yours,<br/>your Anu ♡</div>
+  </article>
+  <section class="cards" aria-label="Little reminders">
+    <div class="panel card"><span class="emoji">🌷</span><strong>You are precious</strong><span>More than you know, every day.</span></div>
+    <div class="panel card"><span class="emoji">🫶🏻</span><strong>You are my person</strong><span>My favourite hello, my hardest goodbye.</span></div>
+    <div class="panel card"><span class="emoji">🌙</span><strong>I'm cheering for you</strong><span>On bright days and the quiet ones.</span></div>
+  </section>
+  <section class="panel date-panel">
+    <div class="big-heart">💜</div>
+    <h2>A little date to keep close</h2>
+    <p>Some dates become little stars in our story.<br/>Here's one I want to remember with you.</p>
+    <div class="date">20 · JANUARY · 2027</div>
+  </section>
+  <div class="footer">built with a soft heart by <b>Anu</b> for <b>Momma</b> ✧ <br/>a little love, wrapped in lavender.</div>
+</main>
+<script>
+const envelope=document.getElementById('envelope'),letter=document.getElementById('letter'),hint=document.getElementById('hint'),openBtn=document.getElementById('openBtn');let isOpen=false;
+function openLetter(){isOpen=!isOpen;envelope.classList.toggle('open',isOpen);envelope.setAttribute('aria-expanded',String(isOpen));letter.classList.toggle('show',isOpen);hint.textContent=isOpen?'A little piece of my heart, just for you 💜':'Tap the envelope to open your surprise, Momma ✨';openBtn.textContent=isOpen?'Close my letter 💌':'Open my letter 💌';if(isOpen){setTimeout(()=>letter.scrollIntoView({behavior:'smooth',block:'nearest'}),180);makeHearts(12)}}
+envelope.addEventListener('click',openLetter);openBtn.addEventListener('click',openLetter);document.getElementById('sprinkleBtn').addEventListener('click',()=>makeHearts(24));
+function makeHearts(count){const symbols=['♡','♥','💜','✧','💕','୨୧'];for(let i=0;i<count;i++){const el=document.createElement('span');el.className='heart';el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.left=(Math.random()*96+2)+'vw';el.style.fontSize=(14+Math.random()*18)+'px';el.style.animationDuration=(4+Math.random()*4)+'s';el.style.animationDelay=(Math.random()*.8)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),9000)}}
+setTimeout(()=>makeHearts(7),650);setInterval(()=>{if(Math.random()>.42)makeHearts(1)},3500);
+</script>
+</body>
+</html>
